@@ -31,11 +31,11 @@ async function calculate() {
     const num2 = display.value;
 
     try {
-        const response = await fetch('https://calculator-26q3.onrender.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ num1, num2, operator })
-        });
+        const response = await fetch('https://calculator-26q3.onrender.com/calculate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ num1, num2, operator })
+});
 
         const data = await response.json();
 
