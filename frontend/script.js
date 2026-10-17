@@ -31,7 +31,7 @@ async function calculate() {
     const num2 = display.value;
 
     try {
-        const response = await fetch('http://localhost:5000/calculate', {
+        const response = await fetch('https://calculator-26q3.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ num1, num2, operator })
